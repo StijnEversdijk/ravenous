@@ -17,7 +17,7 @@ let business = {
   reviewCount: 90
 }
 
-let businesses = [
+const businesses = [
 	business,
 	business,
 	business,
@@ -32,7 +32,7 @@ class App extends Component {
       <div className="App">
         <h1>ravenous</h1>
         <SearchBar />
-        <BusinessList />
+        <BusinessList businesses={businesses} />
       </div>
     );
   }
